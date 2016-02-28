@@ -1032,7 +1032,7 @@ body {
 }
 
 .quote {
-  visibility: hidden;
+  opacity: 0;
   text-align: justify;
   width:400px;
   padding:10px 10px 20px;
@@ -1041,7 +1041,6 @@ body {
   font:italic 26px/1.4 Georgia, serif;
   color:#f4f457;
   background:#f4524d;
-  opacity: 0.9;
   animation:grow 1s 4s 1 ease;
   -webkit-animation:grow_dialog 1s 5s 1 ease;
   animation-fill-mode: forwards;
@@ -1086,25 +1085,9 @@ blockquote, p {padding:0; margin:0;}
 {
   0% {
     opacity: 0;
-    visibility: visible;
-    -webkit-transform: scale(0) translateZ(0);
-    transform: scale(0) translateZ(0);
-  }
-  60% {
-    visibility: visible;
-    -webkit-transform: scale(1.15) translateZ(0);
-    transform: scale(1.15) translateZ(0);
-  }
-  80% {
-    visibility: visible;
-    -webkit-transform: scale(0.95) translateZ(0);
-    transform: scale(0.95) translateZ(0);
   }
   100% {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(2) translateZ(0);
-    transform: scale(1) translateZ(0);
+    opacity: 0.9;
   }
 }
 
@@ -1112,24 +1095,8 @@ blockquote, p {padding:0; margin:0;}
 {
   0% {
     opacity: 0;
-    visibility: visible;
-    -webkit-transform: scale(0) translateZ(0);
-    transform: scale(0) translateZ(0);
-  }
-  60% {
-    visibility: visible;
-    -webkit-transform: scale(1.15) translateZ(0);
-    transform: scale(1.15) translateZ(0);
-  }
-  80% {
-    visibility: visible;
-    -webkit-transform: scale(0.95) translateZ(0);
-    transform: scale(0.95) translateZ(0);
   }
   100% {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(2) translateZ(0);
-    transform: scale(1) translateZ(0);
+    opacity: 0.9;
   }
 }
